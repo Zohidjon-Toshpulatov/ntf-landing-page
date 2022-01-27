@@ -1,0 +1,69 @@
+/*-------------------------
+#.faq-area
+--------------------------*/
+.faq-area {
+    
+     .accordion-item {
+          position: relative;
+          margin-bottom: 20px;
+          background: #fff;
+          border: none;
+          border-radius: 0;
+          z-index: 1;
+          &::before {
+               position: absolute;
+               content: '';
+               width: 150px;
+               height: 80%;
+               background-color: #e176e1;
+               right: 15px;
+               top: 10px;
+               z-index: -1;
+               border-radius: 5px;
+               transform: skewX(-10deg);
+               transition: $transition;
+               opacity: 0;
+               visibility: hidden;
+          }
+          .accordion-header {
+               background-color: var(--white);
+               .accordion-button {
+                    font-family: $bodyFont;
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    color: #202020;
+                    background-color: transparent;
+                    box-shadow: none;
+                    padding: 1.8rem;
+               }
+          }
+          .accordion-body {
+               background-color: var(--white);
+               padding: 1.8rem;
+               p {
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                    color: #202020;
+               }
+          }
+          &.active {
+               &::before {
+                    right: -15px;
+                    opacity: 1;
+                    visibility: visible;
+               }
+          }
+     }
+}
+@media (max-width: 575px) {
+     .faq-area .accordion-item .accordion-body p {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+     }
+     .faq-area .accordion-item.active::before {
+          display: none;
+     }
+     .faq-area .accordion-item .accordion-header .accordion-button {
+          font-size: 1.6rem;
+     }
+}

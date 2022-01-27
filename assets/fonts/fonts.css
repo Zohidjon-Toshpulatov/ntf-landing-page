@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Balmonde';
+    src: url('Balmonde.eot');
+    src: url('Balmonde.eot?#iefix') format('embedded-opentype'),
+    url('Balmonde.woff2') format('woff2'),
+    url('Balmonde.woff') format('woff'),
+    url('Balmonde.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cavolini';
+    src: url('Cavolini-Regular.eot');
+    src: url('Cavolini-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Cavolini-Regular.woff2') format('woff2'),
+    url('Cavolini-Regular.woff') format('woff'),
+    url('Cavolini-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,42 @@
+/*
+------------- Table of content ----------------
+
+1.body reset content
+#.header area
+#.hero-banner-area
+#.butotn
+#.about-area
+#.footer-area
+#.infulencers-area
+#.section-header
+#.faq-area
+#.story-area
+#.roadmap-area
+
+*/
+
+/*-------------------------
+#.hero-banner-area
+--------------------------*/
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/button/button";
+@import "section/hero-banner-area/hero-banner-area";
+@import "section/about-area/about-area";
+@import "section/footer-area/footer-area";
+@import "section/infulencers-area/infulencers-area";
+@import "section/section-header/section-header";
+@import "section/faq-area/faq-area";
+@import "section/story-area/story-area";
+@import "section/roadmap-area/roadmap-area";
+

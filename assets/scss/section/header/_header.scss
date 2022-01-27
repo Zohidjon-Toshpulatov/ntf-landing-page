@@ -1,0 +1,49 @@
+/*-------------------------
+#.header area
+--------------------------*/
+.header-area {
+    padding: 3.5rem 0;
+    position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 99;
+     background-color: #e3f4fc;
+
+    @media (max-width: 991.98px) {
+        padding: 1.5rem 0;
+    }
+
+    .navbar-toggler {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+    .navbar-nav {
+        .nav-item {
+            margin-right: 3rem;
+            .nav-link {
+                margin: 0;
+                padding: 0;
+                font-size: 1.8rem;
+                font-weight: 700;
+                text-transform: capitalize;
+                color: var(--bColor);
+                transition: $transition;
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+            &.active {
+                .nav-link {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .header-area {
+        padding: 1rem 0;
+    }
+}

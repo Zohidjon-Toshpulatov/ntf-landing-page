@@ -1,0 +1,100 @@
+/*-------------------------
+#.footer-area
+--------------------------*/
+.footer-area {
+     padding-top: 300px;
+     background-image: url('../images/footer-bg.png');
+     background-position: center top;
+     background-size: cover;
+
+     @media (max-width: 767.98px) {
+          padding-top: 60px;
+     }
+
+
+     .footer-top {
+          padding: 50px 0 0 0;
+          .about-widget-area {
+               .footer-logo {
+                    display: inline-block;
+                    margin-bottom: 30px;
+                    img {
+                         max-width: 260px;
+                    }
+               }
+          }
+          .single-widget {
+               margin-bottom: 0;
+               .widget-title {
+                    margin-bottom: 25px;
+                    font-family: $bodyFont;
+                    font-size: 26px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    color: #202020;
+               }
+               .flow-list {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                         display: inline-block;
+                         list-style: none;
+                         a {
+                              @include flex-position(flex, center, center);
+                              width: 60px;
+                              height: 60px;
+                              background-image: url('../images/social-media-bg.png');
+                              background-size: contain;
+                              background-position: center center;
+                              background-repeat: no-repeat;
+                              font-size: 20px;
+                              color: #242424;
+                              padding-left: 8px;
+                              padding-top: 3px;
+                              &:hover {
+                                   background-image: url('../images/social-media-hover-bg.png');
+                              }
+                         }
+                    }
+               }
+          }
+     }
+     .footer-bottom {
+          padding: 40px 0;
+          .copyright-area {
+               p {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #202020;
+               }
+          }
+          .footer-menu {
+               margin: 0;
+               padding: 0;
+               li {
+                    display: inline-block;
+                    list-style: none;
+                    a {
+                         display: inline-block;
+                         font-size: 1.4rem;
+                         font-weight: 400;
+                         text-transform: capitalize;
+                         color: #202020;
+                         transition: $transition;
+                         &:hover {
+                              color: var(--primary-color);
+                         }
+                    }
+               }
+          }
+     }
+}
+@media (max-width: 575px) {
+     .footer-area .footer-top .about-widget-area p {
+          font-size: 1.4rem;
+     }
+     .footer-area .footer-top .about-widget-area .footer-logo {
+          margin-bottom: 20px;
+     }
+}
